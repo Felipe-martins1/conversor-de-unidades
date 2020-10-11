@@ -6,27 +6,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
 
 
     <title>Conversor de Unidades</title>
 </head>
 
 <body>
-    <h1>Conversor de Unidades</h1>
-
+    <div class="logo">
+        <h1 class="display-4">Conversor de Unidades</h1>
+        <img src="./regua-triangular.png" alt="Régua Triangular">
+    </div>
     <form>
         <div class="form-group">
-            <label for="milhas">Distância Milhas</label>
-            <input type="number" class="form-control" id="milhas" placeholder="Milhas">
-        </div>
-        <div class="form-group">
-            <label for="metros">Distância Metros</label>
-            <input type="number" disabled class="form-control" id="metros" placeholder="Metros">
-        </div>
-        <button type="button" id="calc" class="btn btn-primary">Converter</button>
+            <div class="input">
+                <div class="select form-group">
+                    <select class="form-control form-control-lg" id="dist-to-convert">
+                        <option id="medida">Medida</option>
+                        <option>Milhas</option>
+                        <option>Quilômetros</option>
+                        <option>Centímetros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="label" for="milhas">Distância</label>
+                    <input type="number" class="form-control form-control-lg" id="milhas" placeholder="Distância">
+                </div>
+            </div>
+            <div class="result form-group">
+                <label for="metros">Distância Metros</label>
+                <input type="number" disabled class="form-control form-control-lg" id="metros" placeholder="Metros">
+            </div>
+            <button type="button" id="calc" class="btn btn-outline-dark">Converter</button>
     </form>
 
     <!-- Optional JavaScript -->
@@ -38,5 +57,8 @@
 
     <script src="calc.js"></script>
 </body>
+</br>
+Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware">Good Ware</a> from <a
+    href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
 
 </html>

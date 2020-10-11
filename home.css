@@ -1,0 +1,41 @@
+
+
+.logo{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: #1f3c88;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.form-group{
+   align-items: center;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f3c88;
+}
+
+button{
+    color: #1f3c88;
+    width: 50%;
+    height: 15%;
+}
+
+.input{
+    display: flex;
+}
+
+.select{
+    margin-top: 38px;
+}
