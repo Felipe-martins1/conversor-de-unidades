@@ -1,4 +1,4 @@
-$('#dist-to-convert').click(function () {
+$('#dist-to-convert').change(function () {
     $('#medida').remove()
 })
 
